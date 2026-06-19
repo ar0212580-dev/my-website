@@ -1,122 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Abdul Rehman | My Website</title>
+    <title>My Website</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial;
-            background: #0f172a;
-            color: white;
         }
 
         header {
-            background: #020617;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-        }
-
-        nav {
-            margin-top: 10px;
+            background: black;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
         }
 
         nav a {
             color: white;
             margin: 10px;
             text-decoration: none;
-            font-size: 14px;
-        }
-
-        section {
-            padding: 50px 20px;
-            text-align: center;
         }
 
         .hero {
-            background: linear-gradient(to right, #0ea5e9, #38bdf8);
-            color: black;
+            text-align: center;
+            padding: 100px;
+            background: purple;
+            color: white;
         }
 
-        img {
-            width: 150px;
-            border-radius: 50%;
-            margin-top: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
+        button {
+            padding: 10px;
             background: black;
             color: white;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .btn:hover {
-            background: #333;
-        }
-
-        footer {
-            background: #020617;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: gray;
         }
     </style>
-</head>
 
+</head>
 <body>
 
 <header>
-    <h1>Abdul Rehman</h1>
+    <h1>My Website</h1>
     <nav>
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Hi, I'm Abdul Rehman 👋</h2>
-    <p>I am learning web development and building real websites.</p>
-
-    <img src="https://via.placeholder.com/150" alt="Profile">
-
-    <br>
-
-    <a class="btn" href="#" onclick="showMessage()">Hire Me</a>
-</section>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a beginner web developer from Pakistan.  
-        I am learning HTML, CSS, and how to build real websites using my phone.
-    </p>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>📧 Email: your@email.com</p>
-    <p>📱 WhatsApp: +92XXXXXXXXXX</p>
-</section>
-
-<footer>
-    <p>© 2026 Abdul Rehman | All Rights Reserved</p>
-</footer>
+<div class="hero">
+    <h2>Welcome 🔥</h2>
+    <button onclick="showMessage()">Click Me</button>
+</div>
 
 <script>
-    function showMessage() {
-        alert("Thanks for visiting! Contact me on WhatsApp 📱");
-    }
+function showMessage() {
+    alert("🔥 Your website is now LIVE!");
+}
 </script>
 
 </body>
