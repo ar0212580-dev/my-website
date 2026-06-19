@@ -1,64 +1,46 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Website</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
-
-        header {
-            background: black;
-            color: white;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 100px;
-            background: purple;
-            color: white;
-        }
-
-        button {
-            padding: 10px;
-            background: black;
-            color: white;
-        }
-    </style>
-
-</head>
-<body>
-
-<header>
-    <h1>My Website</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<div class="hero">
-    <h2>Welcome 🔥</h2>
-    <button onclick="showMessage()">Click Me</button>
-</div>
-
-<script>
-function showMessage() {
-    alert("🔥 Your website is now LIVE!");
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
 }
-</script>
 
-</body>
-</html>
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 120px;
+}
+
+button {
+    padding: 12px 25px;
+    background: cyan;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+}
+</style>
